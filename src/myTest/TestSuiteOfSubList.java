@@ -3,7 +3,6 @@ package myTest;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
-import java.lang.reflect.Method;
 
 import org.junit.After;
 
@@ -11,7 +10,6 @@ import static org.junit.Assert.*;
 
 
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import myAdapter.*;

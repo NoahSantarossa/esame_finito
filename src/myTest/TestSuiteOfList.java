@@ -2,16 +2,13 @@ package myTest;
 
 //import package testjunit and myAdapter
 import myAdapter.*;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 //import the assert
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertArrayEquals;
 
-import java.lang.reflect.Method;
 
 import org.junit.After;
 /**

@@ -7,7 +7,6 @@ import static org.junit.Assert.*;
 // Adapter package 
 import myAdapter.*;
 
-import java.lang.reflect.Method;
 import java.util.NoSuchElementException;
 
 /**
