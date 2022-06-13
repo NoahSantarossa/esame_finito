@@ -115,8 +115,8 @@ public class Vector {
 
     
     /** 
-     * @param obj the object to add
-     * @param index of position to add
+     * @param obj 
+     * @param index 
      */
     public void insertElementAt(Object obj, int index){
         vector.insertElementAt(obj, index);
@@ -140,8 +140,8 @@ public class Vector {
 
     
     /** 
-     * @param elem the elem to search
-     * @return int the position of lastindex of elem
+     * @param elem 
+     * @return int 
      */
     public int lastIndexOf(Object elem){
         return vector.lastIndexOf(elem);
@@ -149,9 +149,9 @@ public class Vector {
 
     
     /** 
-     * @param elem the element to remove
-     * @param index the index to remove
-     * @return int the index of elem
+     * @param elem 
+     * @param index 
+     * @return int 
      */
     public int lastIndexOf(Object elem, int index){
         return vector.lastIndexOf(elem, index);
@@ -163,8 +163,8 @@ public class Vector {
 
     
     /** 
-     * @param obj element to remove
-     * @return boolean return true if is done false otherwise
+     * @param obj 
+     * @return boolean 
      */
     public boolean removeElement(Object obj){
         return vector.removeElement(obj);
@@ -172,7 +172,7 @@ public class Vector {
 
     
     /** 
-     * @param index the index to remove
+     * @param index
      */
     public void removeElementAt(int index){
         vector.removeElementAt(index);
@@ -180,8 +180,8 @@ public class Vector {
 
     
     /** 
-     * @param obj value to set
-     * @param index index of element to set
+     * @param obj 
+     * @param index 
      */
     public void setElementAt(Object obj, int index){
         vector.setElementAt(obj, index);
@@ -189,7 +189,7 @@ public class Vector {
 
     
     /** 
-     * @param newSize the value to resize
+     * @param newSize 
      */
     public void setSize(int newSize){
         vector.setSize(newSize);
@@ -197,7 +197,7 @@ public class Vector {
 
     
     /** 
-     * @return int return the size of vector
+     * @return int 
      */
     public int size(){
         return vector.size();
@@ -205,7 +205,7 @@ public class Vector {
 
     
     /** 
-     * @return String return string
+     * @return String 
      */
     public String toString(){
         return vector.toString();
@@ -217,8 +217,8 @@ public class Vector {
 
     
     /** 
-     * @param obj the param object to verify
-     * @return boolean return true if is equals else otherwise
+     * @param obj 
+     * @return boolean 
      */
     @Override
     public boolean equals(Object obj) {
@@ -230,7 +230,7 @@ public class Vector {
 
     
     /** 
-     * @return int the hashcode
+     * @return int 
      */
     @Override
     public int hashCode() {
@@ -239,7 +239,7 @@ public class Vector {
 
     
     /** 
-     * @param object the object to insert in vector
+     * @param object the 
      */
     public void add(Object object) {
     }

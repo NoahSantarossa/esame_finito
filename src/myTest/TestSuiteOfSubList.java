@@ -271,7 +271,8 @@ public class  TestSuiteOfSubList
     //----------------------------------------- remove method ------------------------------------------
     
     /**
-     * <p><b>Summary</b>: remove method test case.</p>
+     * <p><b>Summary</b>: remove method test case.
+     * The test is based on verify the method remove from subList in critical case(lunch IAE).</p>
      * <p>Test Case Design: The test of remove after an elimination
      * to the root list, which should cause an exception throw.</p>
      * <p>Test Description: Add element to the list and after invoked remove. 
@@ -367,7 +368,8 @@ public class  TestSuiteOfSubList
     }
     
     /**
-     * <p><b>Summary</b>: removeAll method test case.</p>
+     * <p><b>Summary</b>: removeAll method test case.
+     * The test is based on verify the method removeAll from subList in different case.</p>
      * <p>Test Case Design: Removes elements(single and multiple) from the sublist.</p>
      * <p>Test Description: subList contains {1, ..., 10,5, 4, 5, 4, 3} and
      * {3, 4, 5} removed with method. After check if all is done correctly.</p>
@@ -402,7 +404,8 @@ public class  TestSuiteOfSubList
     }
     
     /**
-     * <p><b>Summary</b>: removeAll and remove method test case.</p>
+     * <p><b>Summary</b>: removeAll and remove method test case.
+     * The test is based on verify the method removeAll and remove combinatated in a sequences.</p>
      * <p>Test Case Design: Various add, remove and removeAll
      * are used to check the method in stressed situation.</p>
      * <p>Test Description: First list contains {1, 2, 3, 3, 3}. 
@@ -445,7 +448,7 @@ public class  TestSuiteOfSubList
 
     /**
      * <p><b>Summary</b>: retainAll method test case.
-     * retainAll is being called with collection null.</p>
+     * retainAll is being called  in the critical case when collection is null.</p>
      * <p>Test Case Design: retainAll being called with the limit case of null pointer coll.</p>
      * <p>Test Description: The subList method lunch retainAll(coll) but the coll is null and method catch NullPointerException </p>
      * <p>Pre-Condition: The subList contains {0-3}, the list contains {0-19}. coll is null</p>
@@ -716,7 +719,7 @@ public class  TestSuiteOfSubList
 
     /**
      * <p><b>Summary</b>: isEmpty method test case. 
-     * The test case asserts if the method worked.</p>
+     * The test its based on verify the method in critical case of empty subList.</p>
      * <p>Test Case Design: The design is a simple assert of isEmpty(). 
      * From Sommerville: "Test with critical case(empty list)"</p>
      * <p>Test Description: Test based on use assert to verify the method isEmpty().</p>
@@ -1029,7 +1032,7 @@ public class  TestSuiteOfSubList
     /**
      * <p><b>Summary</b>: toArray method test case.
      * The test is based on check the if arrayTarget is null.</p>
-     * <p>Test Case Design: Test focuses on toArray(Objcet[]) ritical case (null point array) "</p>
+     * <p>Test Case Design: Test focuses on toArray(Object[]) ritical case (null point array) "</p>
      * <p>Test Description: The method test with the constructor try{}catch{} the critical case of ArrayTarget null pointer.</p>
      * <p>Pre-Condition: The list is empty.The temp array is null.</p>
      * <p>Post-Condition: The list has one element, and the array contains it.</p>
@@ -1168,7 +1171,7 @@ public class  TestSuiteOfSubList
 
     /**
      * <p><b>Summary</b>: LastindexOf method test case.
-     * Test when the index search isnt in the subList.</p>
+     * Test is based on verify method when the index searched isnt in the subList.</p>
      * <p>Test Case Design: Test is based on critical case elment isnt in the subList.</p>
      * <p>Test Description: subList contains {0-10}. Invoke the method to search the index 77.</p>
      * <p>Pre-Condition: subList contains {0-10}. The support method worked.</p>
@@ -1388,7 +1391,7 @@ public class  TestSuiteOfSubList
     
     /**
      * <p><b>Summary</b>: hashCode test case.
-     * Tests the method hash code apllied to this.</p>
+     * Test is based on verify the method hash code in critical case list.hashCode(list).</p>
      * <p>Test Case Design: Test the method in critical case. The subList start empty. Use method add and try the method again.</p>
      * <p>Test Description: Use method hashcode in critical case "this==this"</p>
      * <p>Pre-Condition: subList have same hashCode and they are equal.All support method worked.</p>
@@ -1520,7 +1523,8 @@ public class  TestSuiteOfSubList
     }
 
     /**
-     * <p><b>Summary</b>: equals method test case.</p>
+     * <p><b>Summary</b>: equals method test case.
+     * The test is based on verify the method equals from subList in different case.</p>
      * <p>Test Case Design: equals method is tested with three different case of list adapter(same,bigger, lower size)</p>
      * <p>Test Description: List is initialized, then different equals invoke all time and verify with the assert the method.</p>
      * <p>Pre-Condition: subList contains {10-20}, list contains {0-30}.All support method worked.</p>

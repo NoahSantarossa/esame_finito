@@ -3,10 +3,16 @@ package myAdapter;
 import java.util.NoSuchElementException;
 /**
  * ListAdapter adapts the list class from Java CLDC 1.1 to the
- * HList and HCollection interface. Therefore it is an Adapter
- * design pattern. Each instantiation can return a fail-fast
- * iterator to iterate through the list elements. Its elements
- * can be accessed also through indeces.
+ * HList and HCollection interface. 
+ * Therefore it is an Adapter design pattern.
+ * The ListAdapter has also its iterator specif for use the list.
+ * The method subList is used to create a Sublist from the root list, 
+ * if it is modify the father list its modify also.
+ * The subList has also its iterator different of ListIterator.
+ * All class have its testSuite specific for verify the method.
+ * 
+ * @version 1.0
+ * @author Santarossa Noah
  */
 public class ListAdapter implements HList
 {

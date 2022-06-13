@@ -7,7 +7,9 @@ import java.util.*;
 import org.junit.runner.Result;
 
 /**
- * <p>The class for verify all tests of the project.</p>
+ * <p><b>Summary</b>:The class for verify all tests of the project.</p>
+ * The class its call in cmd prompt for verify myTest package (main class).
+ * It is based on JUnit framework and its use the package org.junit.runner.notification.Failure for save the eventual error.
  * 
  * @version JUnit 4.13.2
  * @author Santarossa Noah
@@ -24,7 +26,7 @@ public class TestRunner
 
 		System.out.println("**Test in execution..**\n");
 
-		System.out.println("\nTest of ListAdapter..");
+		System.out.println("\nTest of TestSuiteOfSubList, TestSuiteOfList, TestSuiteOfListIterator,TestSuiteOfSubListIterator");
 		res = JUnitCore.runClasses(TestSuiteOfSubList.class,TestSuiteOfList.class,
 									TestSuiteOfListIterator.class,TestSuiteOfSubListIterator.class);
 		esitoTest(res);
