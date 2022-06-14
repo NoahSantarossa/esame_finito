@@ -24,7 +24,7 @@ public class TestRunner
 	{
 		Result res;
 
-		System.out.println("***Test in execution..***");
+		System.out.println("\n***Test in execution..***");
 
 		System.out.println("\nTest of TestSuiteOfSubList, TestSuiteOfList, TestSuiteOfListIterator, TestSuiteOfSubListIterator.\n");
 		res = JUnitCore.runClasses(TestSuiteOfSubList.class,TestSuiteOfList.class,
