@@ -10,8 +10,8 @@ import org.junit.runner.Result;
  * <p><b>Summary</b>:The class for verify all tests of the project.</p>
  * The class its call in cmd prompt for verify myTest package (main class).
  * It is based on JUnit framework and its use the package org.junit.runner.notification.Failure for save the eventual error.
- * 
- * @version JUnit 4.13.2
+ * Use the library: hamcrest-core-1.3.jar and junit-4.13.2.jar.
+ * @version 1.0
  * @author Santarossa Noah
  */
 public class TestRunner 
@@ -24,13 +24,17 @@ public class TestRunner
 	{
 		Result res;
 
-		System.out.println("**Test in execution..**\n");
+		System.out.println("***Test in execution..***");
 
-		System.out.println("\nTest of TestSuiteOfSubList, TestSuiteOfList, TestSuiteOfListIterator,TestSuiteOfSubListIterator");
+		System.out.println("\nTest of TestSuiteOfSubList, TestSuiteOfList, TestSuiteOfListIterator, TestSuiteOfSubListIterator.\n");
 		res = JUnitCore.runClasses(TestSuiteOfSubList.class,TestSuiteOfList.class,
 									TestSuiteOfListIterator.class,TestSuiteOfSubListIterator.class);
 		esitoTest(res);
-		System.out.println("\n*** All the " + totalTests + " tests have been completed +**");
+
+		System.out.println("\n***All the " + totalTests + " tests have been completed***\n");
+		System.out.println("The total time for tests is "+res.getRunTime()+" ms.");
+		
+		System.out.println("\n***TestClass completed correctly***\n");
 		
 	}
 
@@ -45,11 +49,11 @@ public class TestRunner
 		System.out.print("Of " + res.getRunCount() + " tests ");
 		if (res.wasSuccessful())
 		{
-			System.out.println("all are with a positive result");
+			System.out.println("all are ended with a positive result.");
 		}
 		else
 		{
-	  	System.out.println("failed " + res.getFailureCount() + " tests");
+	  	System.out.println("failed " + res.getFailureCount() + " tests.");
 			List<Failure> fails = res.getFailures();
 			Iterator<Failure> iter = fails.iterator();
 			while(iter.hasNext())

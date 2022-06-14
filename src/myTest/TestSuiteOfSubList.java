@@ -91,8 +91,8 @@ import myAdapter.*;
  * <li>public void myTest.TestSuiteOfSubList.test_Set_Range()</li>
  * </ul>
  * <p><b>Test Suite Execution Records:</b>
- *  All test has been correctly execute.</p>
- * <p><b>Execution Variable:</b> There are no execution variables.</p>
+ * All test has been correctly execute.</p>
+ * <p><b>Execution Variable:</b> There arent execution variables.</p>
  * @see TestSuiteOfList
  * @see TestSuiteOfSubListIterator
  * 
@@ -166,7 +166,8 @@ public class  TestSuiteOfSubList
     //------------------------------------------ size method ------------------------------------------
 
     /**
-     * <p><b>Summary</b>: size method test case.</p>
+     * <p><b>Summary</b>: size method test case.
+     * The method is based on verify the method size in the critical case of empty subList.</p>
      * <p>Test Case Design: The size method is called
      * on a sublist created with from = to, which means
      * that the sublist is empty.</p>
@@ -318,7 +319,7 @@ public class  TestSuiteOfSubList
 
     /**
      * <p><b>Summary</b>: remove method test case.
-     * Tests if operation in sublist influence the list in remove out of sublist.</p>
+     * Tests is based on verify the method remove in critical situation on try to remove index out of sublist(but in the list range).</p>
      * <p>Test Case Design: Remove generic element from subList and after check if that influence the father list.</p>
      * <p>Test Description: List contains {0 - 9} invoked sublist in (5 - 10).Invoked remove to sublist in two range.
      * Now analized the action of remove in the list and sublist.</p>
@@ -448,7 +449,7 @@ public class  TestSuiteOfSubList
 
     /**
      * <p><b>Summary</b>: retainAll method test case.
-     * retainAll is being called  in the critical case when collection is null.</p>
+     * the test is based on verify retainAll in the critical case when collection is null.</p>
      * <p>Test Case Design: retainAll being called with the limit case of null pointer coll.</p>
      * <p>Test Description: The subList method lunch retainAll(coll) but the coll is null and method catch NullPointerException </p>
      * <p>Pre-Condition: The subList contains {0-3}, the list contains {0-19}. coll is null</p>
@@ -498,7 +499,7 @@ public class  TestSuiteOfSubList
 
     /**
      * <p><b>Summary</b>: add method test case. 
-     * The test case is based on add(Object) asserts if the method worked when add to empty sublist</p>
+     * The test case is based on add(Object) in the critical case of empty sublist</p>
      * <p>Test Case Design: The design is a simple assert of add call in empty sublist. 
      * From Sommerville: "Test software with sequences of a single value"</p>
      * <p>Test Description: Test based on the test of critical case "list with one element"</p>
@@ -519,7 +520,7 @@ public class  TestSuiteOfSubList
 
     /**
      * <p><b>Summary</b>: add method test case. 
-     * The test case asserts if the method worked when add different number of element 1000/100/10</p>
+     * The test case is based on verify add with different sequnces of element (1000/100/10)</p>
      * <p>Test Case Design: The design is a simple assert of add different number of datas. 
      * From Sommerville: "Test with sequences of different size."</p>
      * <p>Test Description: Test based on a specific sublist with 1000/100/10 elements</p>
@@ -766,7 +767,7 @@ public class  TestSuiteOfSubList
      * <p>Test Case Design: Invokes clear method on a list containing 1 element.</p>
      * <p>Test Description: Calls clear on the list. Now check if the method worked.
      * From Sommerville:" the with sequnece of dimension 1"</p>
-     * <p>Pre-Condition: List contains 1000000. ALl support method worked.</p>
+     * <p>Pre-Condition: List contains 1000000. All support method worked.</p>
      * <p>Post-Condition: List is empty.</p>
      * <p>Expected Results: isEmpty return true.The array return by toArray should be the same of empty array</p>
      */
@@ -782,7 +783,7 @@ public class  TestSuiteOfSubList
 
     /**
      * <p><b>Summary</b>: clear method test case.
-     * Test is based on clear use assert to verify when sublist contains different data.</p>
+     * Test is based on verify clear method in various occasion as different size sequences.</p>
      * <p>Test Case Design: Invokes clear method in different case of size and data.</p>
      * <p>Test Description: Calls clearin with various sequence.</p>
      * <p>Pre-Condition: subList is empty. All support method worked.</p>

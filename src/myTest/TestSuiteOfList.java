@@ -101,7 +101,7 @@ import org.junit.After;
  * </ul>
  * <p><b>Test Suite Execution Records:</b>
  *  All test has been correctly execute.</p>
- * <p><b>Execution Variable:</b> There are no execution variables.</p>
+ * <p><b>Execution Variable:</b> There arent execution variables.</p>
  * @see TestSuiteOfSubList
  * @see TestSuiteOfList
  * 
