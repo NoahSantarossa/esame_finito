@@ -393,7 +393,6 @@ public class ListAdapter implements HList
          * Appends the specified element to the end of this list (optional operation).
          * <p>
          *
-         *
          * @param obj element to be appended to this list.
          * @return true (as per the general contract of the Collection.add method).
          *
@@ -519,7 +518,7 @@ public class ListAdapter implements HList
          *         or more null elements and this list does not permit null
          *         elements, or if the specified collection is null
          * @throws IndexOutOfBoundsException if the index is out of range
-         *         (index < 0 || index > size())
+         *         (index @lt 0 || index @gt size())
          */
         public boolean addAll(int index, HCollection coll)
         {
@@ -555,7 +554,7 @@ public class ListAdapter implements HList
         {
             checkModificationCountSubList();
 
-            if (isEmpty() || coll.isEmpty())//coll is empty
+            if (isEmpty() || coll.isEmpty())//coll is empty or this is empty check
                 return false;
                 
             boolean listChanged = false;
@@ -876,7 +875,7 @@ public class ListAdapter implements HList
         /**
          * the method check if the root has structural modification.
          * 
-         * @throws IllegalStateException if sublist became invalid
+         * @throws IllegalArgumentException if sublist became invalid
          */
         private void checkModificationCountSubList()
         {
